@@ -1,0 +1,42 @@
+%-------------------------------------------------------------------------------
+% LATEX TEMPLATE ARTIKEL
+%-------------------------------------------------------------------------------
+% Dit template is voor gebruik door studenten van de de bacheloropleiding 
+% Informatica van de Universiteit van Amsterdam.
+% Voor informatie over schrijfvaardigheden, zie 
+%                               https://practicumav.nl/schrijven/index.html
+%
+%-------------------------------------------------------------------------------
+%	PACKAGES EN DOCUMENT CONFIGURATIE
+%-------------------------------------------------------------------------------
+
+\documentclass{uva-inf-article}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{pdflscape}
+\usepackage{todonotes}
+\usepackage{enumitem}
+\setlist{itemsep=0.5pt}
+
+\usepackage{xcolor}
+\usepackage[style=authoryear-comp]{biblatex}
+\addbibresource{references.bib}
+\title{Motion Capture guide, how to setup and start recording}
+\authors{Jari Andersen}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\input{Sections/shogun}
+\newpage
+\input{Sections/UnrealEngine}
+\input{Sections/OBS}
+\newpage
+\input{Sections/interface}
+\input{Sections/Troubleshooting}
+
+\end{document}

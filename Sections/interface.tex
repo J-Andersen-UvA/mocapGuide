@@ -1,0 +1,19 @@
+\section{Interface automatic recording}\label{UI}
+In order to see all systems healths and connectivity, in addition telling all systems when to record, we use the PineapplePipelineDiscovery interface.
+\begin{enumerate}
+    \item Run the PineapplePipelineDiscovery.bat script
+    \item Wait a few seconds for all services and devices to connect to the pineapple\\
+    The interface shows heart icons, it displays the health of the services connected:
+    \begin{itemize}
+        \item Gray: not connected. Make sure the service is on the same network. Make sure the service's bat script is running.
+        \item Green: healthy.
+        \item Red: unhealthy. Wait a few seconds to see if it resolves the issues on its own. Otherwise figure out what the issue is for that device. Worst case scenario, turn off the service's bat scripts and then run again.
+    \end{itemize}
+    \item Click the Start Listen button
+    \item Open a chrome browser and go to: \url{https://signcollect.nl/3dOpname_test.html?noBabylon=1}\\The webpage displays it status based on its color:
+    \begin{itemize}
+        \item Red: Unreal Engine not connected, we should not record
+        \item White: Unreal Engine connected, waiting to start recording
+        \item Green: Currently recording
+    \end{itemize}
+\end{enumerate}

@@ -1,0 +1,36 @@
+\section{Unreal Engine}
+\subsection{Hardware setup}
+\begin{enumerate}
+    \item Turn on the second computer
+    \item Make sure the main and second computers are connected to the vislab\_wifi network
+    \item iPhone Live Link Face:
+    \begin{enumerate}
+        \item Make sure the iPhone is also on this network
+        \item Turn on Live Link Face application on the iPhone
+        \item Record a resting pose for the actor's face on the Live Link Face application
+    \end{enumerate}
+\end{enumerate}
+\subsection{Software setup}
+\begin{enumerate}
+    \item Open the correct project on the second computer (recording project on the desktop)
+    \item Click the take recorder panel so it initializes itself
+    \item In the top left under ToucanTools:
+    \begin{enumerate}
+        \item Load Default LiveLink Preset\label{step1}
+        \item Bake LiveLink to AnimBP\label{step2}
+        \item Run Take Recorder
+    \end{enumerate}
+    \item If the mocap actor's movements aren't translated on the avatar:
+    \begin{itemize}
+        \item Repeat step \ref{step1} and \ref{step2} in succession a few times
+        \item Troubleshoot by opening the Live Link window in Unreal Engine and see if the sources are present. If not:
+        \begin{itemize}
+            \item Try step \ref{step1} again
+            \item Make sure you selected the retarget in Shogun Live
+            \item Make sure all devices are connected to the same network
+            \item Make sure there is enough space on the iPhone
+            \item Make sure the iPhone is connected to the charging cable (if below 10\% the UI in section \ref{UI} will warn you)
+            \item Open the LLF\_websocket.bat on the main computer
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
